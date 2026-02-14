@@ -69,6 +69,26 @@ Run the pipeline
 - Region-wise sales summary
 - Execution logs
 
+---
+
+## 🗄 SQL Integration
+
+The pipeline integrates SQLite for database-level aggregation and analysis.
+
+### Steps Performed:
+
+1. Cleaned CSV data is loaded into a SQLite database.
+2. SQL queries are executed to calculate region-wise total sales.
+3. SQL output is exported as `sql_sales_summary.csv`.
+4. Entire process is automated within the shell pipeline.
+
+### Example SQL Query Used:
+
+```sql
+SELECT region, SUM(amount) AS total_sales
+FROM sales
+GROUP BY region;
+
 ## 🎯 Learning Outcomes
 
 - Data preprocessing using Pandas
@@ -76,4 +96,5 @@ Run the pipeline
 - Shell scripting automation
 - Logging and error handling
 - Git version control
+
 
