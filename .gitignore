@@ -1,4 +1,7 @@
 venv/
-__pyache__/
+__pycache__/
 *.pyc
-logs/*.log
+logs/
+database/
+*.db
+
