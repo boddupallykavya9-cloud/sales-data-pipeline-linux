@@ -57,6 +57,8 @@ Activate virtual environment:
 ```bash
 source venv/bin/activate
 ```
+Run the pipeline
+
 ```bash
 ./run_pipeline.sh
 ```
