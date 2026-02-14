@@ -56,8 +56,10 @@ sales_pipeline/
 Activate virtual environment:
 ```bash
 source venv/bin/activate
+```
 ```bash
 ./run_pipeline.sh
+```
 
 ## 📊 Output
 
